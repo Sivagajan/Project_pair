@@ -17,6 +17,11 @@ Herz am Ende der Website ist animiert
 }
 
 h1 {
+    margin: 0 auto;
+    display: block;
+    width: 720px;
+    font-size: 100px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -33,19 +38,37 @@ a {
 
 /* --HEADER */
 header {
+    text-align: center;
+    height: 150vh;
 }
 header h2 {
+    font-size: 20px;
 }
 header img {
 }
 header p {
+    font-size: 160px;
+    font-family: 'Work Sans', sans-serif;
 }
 
-main {
+main section:first-child{
+    background-image: url('../img/portfolio2.jpg');
+}
+
+main section:nth-child(2){
+    background-image: url('../img/portfolio3.png');
+}
+
+main section:nth-child(3){
+    background-image: url('../img/portfolio4.png');
+}
+main section:last-child{
+    background-image: url('../img/portfolio5.png');
 }
 
 /* ---SECTION */
 section {
+    /* width: 100vw; */
 }
 
 .page-number {
