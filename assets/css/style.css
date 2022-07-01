@@ -11,17 +11,24 @@ Herz am Ende der Website ist animiert
 /* ---GLOBAL */
 * {
   font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+    width: 1440px;
+}
 h1 {
     margin: 0 auto;
     display: block;
     width: 720px;
     font-size: 100px;
     text-transform: uppercase;
+    padding: 50px;
+}
+img {
+    height: 1080px;
 }
 
 h2 {
@@ -31,6 +38,7 @@ h3 {
 }
 
 p {
+
 }
 
 a {
@@ -39,7 +47,7 @@ a {
 /* --HEADER */
 header {
     text-align: center;
-    height: 150vh;
+    height: 1450px;
 }
 header h2 {
     font-size: 20px;
@@ -47,9 +55,14 @@ header h2 {
 header img {
 }
 header p {
+    margin-top: 100px;
     font-size: 160px;
     font-family: 'Work Sans', sans-serif;
 }
+main{
+    margin-top: 500px;
+}
+/* -- BG-Img's -- */
 
 main section:first-child{
     background-image: url('../img/portfolio2.jpg');
@@ -60,14 +73,21 @@ main section:nth-child(2){
 }
 
 main section:nth-child(3){
-    background-image: url('../img/portfolio4.png');
+    background-image: url('../img/portfolio4.jpg');
 }
 main section:last-child{
     background-image: url('../img/portfolio5.png');
 }
+main section:first-child, main section:nth-child(2), main section:nth-child(3), main section:last-child {
+    height: 100vh;
+}
+
 
 /* ---SECTION */
 section {
+    width: 100vw;
+    background-repeat: no-repeat;
+
     /* width: 100vw; */
 }
 
