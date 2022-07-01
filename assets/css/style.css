@@ -70,20 +70,30 @@ main {
 /* -- BG-Img's -- */
 main section:first-child {
   background-image: url("../img/portfolio2.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 main section:nth-child(2) {
   background-image: url("../img/portfolio3.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 main section:nth-child(3) {
   background-image: url("../img/portfolio4.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 main section:nth-child(4) {
   background-image: url("../img/portfolio5.png");
-  max-width: 10%;
-
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 main section:first-child,
