@@ -82,13 +82,15 @@ main section:nth-child(3) {
 
 main section:nth-child(4) {
   background-image: url("../img/portfolio5.png");
+  max-width: 10%;
+
 }
+
 main section:first-child,
 main section:nth-child(2),
 main section:nth-child(3),
 main section:nth-child(4) {
-    
-  width: 100vw;
+  height: 90vh;
 }
 
 /* ---SECTION */
