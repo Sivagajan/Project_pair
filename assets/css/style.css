@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@keyframes pulse {
+    0%,100%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5)
+    }
+}
+
 /* TODO
 font-family: 'Didact Gothic', sans-serif;
 font-family: 'Fjalla One', sans-serif;
@@ -10,11 +20,11 @@ Herz am Ende der Website ist animiert
 
 /* ---GLOBAL */
 * {
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -23,108 +33,209 @@ body {
 }
 
 h1 {
-  margin: 0 auto;
-  display: block;
-  width: 720px;
-  font-size: 100px;
-  text-transform: uppercase;
-  padding: 50px;
-}
-
-h2 {
-}
-
-h3 {
-}
-
-p {
-}
-
-a {
+    margin: 0 auto;
+    display: block;
+    width: 720px;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 50px;
 }
 
 /* --HEADER */
 header {
-  text-align: center;
-  height: 1450px;
-}
-
-header h2 {
-  font-size: 20px;
+    margin-bottom: 200px;
+    text-align: center;
+/*     height: 1450px;*/
 }
 
 header img {
-  height: 1080px;
+    height: 80em;
 }
 
 header p {
-  margin-top: 100px;
-  font-size: 160px;
-  font-family: "Work Sans", sans-serif;
-}
-
-main {
-  margin-top: 500px;
+    margin-top: 100px;
+    font-size: 150px;
+    font-family: "Work Sans", sans-serif;
 }
 
 /* -- BG-Img's -- */
+section:nth-child(odd) {
+    height: 900px;
+}
 main section:first-child {
-  background-image: url("../img/portfolio2.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("../img/portfolio2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main section:nth-child(2) {
-  background-image: url("../img/portfolio3.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #fff;
+    background-image: url("../img/portfolio3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main section:nth-child(3) {
-  background-image: url("../img/portfolio4.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("../img/portfolio4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 main section:nth-child(4) {
-  background-image: url("../img/portfolio5.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+
+    background-image: url("../img/portfolio5.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-main section:first-child,
-main section:nth-child(2),
-main section:nth-child(3),
-main section:nth-child(4) {
-  height: 90vh;
+
+.tx-white {
+    margin-top: 100px;
+    padding: 220px;
+    color: #fff;
+}
+.tx-white h2 {
+    font-size: 112px;
 }
 
-/* ---SECTION */
-section {
-  background-repeat: no-repeat;
-
-  /* width: 100vw; */
+.tx-whitenumber {
+    padding-top: 10px;
+    opacity: 20%;
+    font-size: 165px;
+    text-align: right;
+    font-family: 'Fjalla One', sans-serif;
+}
+.buttonwhite {
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 80px;
 }
 
-.page-number {
-}
-article p {
-}
-article a {
+.buttonwhite a{
+    color: #fff;
+    text-decoration: none;
 }
 
-/* ---FOOTER */
-footer {
+
+/* Black */
+.tx-black {
+    margin-top: 100px;
+    padding: 220px;
 }
-nav {
+.tx-black h2 {
+    font-size: 112px;
+
 }
-nav a {
+.tx-blacknumber {
+    padding-top: 10px;
+    opacity: 50%;
+    font-size: 165px;
+    text-align: right;
+    font-family: 'Fjalla One', sans-serif;
+}
+.buttonblack {
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 80px;
+}
+.buttonblack a {
+    color: #000;
+    text-decoration: none;
+
 }
 
-/*
- footer herz-animation {} 
- */
+
+/* what more? */
+
+article{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    padding: 130px;
+}
+h3{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 160px;
+}
+
+article {
+    height: 60em;
+}
+article p{
+    font-size: 22px;
+    padding-top: 150px;
+    text-align:left;
+    line-height: 35px;
+    width: 550px;
+    display: block;
+    margin-left: 50%;
+    word-spacing: px;
+}
+/* ohne paragraph lässt sich der hyperlink nicht versetzen */
+article>p>a{
+    color: white;
+    text-decoration: none;
+    width: 550px;
+    font-size: 50px;
+}
+
+footer{
+    height: 130vh;
+    text-align: center;
+    margin-top: 150px;
+}
+
+li{
+    list-style-type: none;
+    padding-bottom: 150px;
+}
+
+ul>li>a{
+    color: #000;
+    text-decoration: none;
+    font-size: 160px;
+}
+
+footer p{
+    margin-top: 70px;
+}
+
+.heart {
+    text-align: center;
+    display: inline-block;
+    animation: pulse 1s ease-in-out infinite;
+}
+.buttonwhite:hover {
+    background: #fff;
+}
+.buttonwhite:hover a {
+    color: black;
+}
+
+.buttonwhite:hover + .tx-whitenumber {
+    opacity: 90%;
+}
+
+.buttonblack:hover {
+    background: #000;
+}
+.buttonblack:hover a {
+    color: #fff;
+}
+.buttonblack:hover + .tx-blacknumber {
+    opacity: 90%;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+article a:hover {
+    text-decoration: underline;
+}
